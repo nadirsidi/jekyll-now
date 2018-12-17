@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Independent Project - PredictedIt - Project Notes
+tags: predictedit notes
 ---
 
 ## Project Overview
@@ -51,3 +52,5 @@ TODO(nadir.sidi): Add a lucid-chart diagram here
 
 ### Data Access
 * Investigate querying data from Athenta
+
+{% include archive.html %}
