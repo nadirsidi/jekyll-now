@@ -19,12 +19,10 @@ code.highlighter-rouge {
   padding-right: 4px;
 }
 
-code.highlighter-rouge {
-  nobr {
-    color: #4183C4;
-    text-decoration: none;
-    cursor: pointer;
-  }
+nobr {
+  color: #4183C4;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .highlight pre { background-color: #272822; }
