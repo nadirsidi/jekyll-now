@@ -10,6 +10,7 @@ code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
   color: #BDCAB1;
   font-size: 75%;
+  .highlighter-rouge { color: #4183C4; }
 }
 
 .highlight pre { background-color: #272822; }
@@ -77,5 +78,3 @@ code {
 .highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
 .highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
 .highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
-
-.highlighter-rouge { color: #4183C4; }
