@@ -34,20 +34,21 @@ dbfs cp ./my_package.tar.gz dbfs:/home/nadir/custom_R_packages/
 ```
 3. We'll need to ensure we first install all the package dependencies from a CRAN mirror. You can compare your custom package dependencies listed in the [DESCRIPTION](http://r-pkgs.had.co.nz/description.html) file to the already-installed R packages in each Databricks runtime environment. Here is the list of [R packages in the Databricks 4.3 runtime enviroment](https://docs.databricks.com/release-notes/runtime/4.3.html#installed-r-libraries).
 4. Write a bash script to invoke R, install all necessary dependencies from CRAN, and install your local package from the dbfs. Here is my `install_my_package.sh` init script. Note, you'll need to specify a CRAN repo as there doesn't seem to be a default. Also, note the different syntax for referring to the dbfs with the CLI versus in the script:
-```
-#!/bin/bash
 
-# Install necessary dependencies from CRAN for your custom package
-# Dependencies I need that are already in Databricks runtime env 4.3:
-# data.table
-# timeDate
-# xml2
+  ```
+  #!/bin/bash
 
-R -e 'install.packages(c("rvest", "evaluate"), repos = "https://cloud.r-project.org")'
+  # Install necessary dependencies from CRAN for your custom package
+  # Dependencies I need that are already in Databricks runtime env 4.3:
+  # data.table
+  # timeDate
+  # xml2
 
-# Install the local package code for your package
-R -e 'install.packages("/dbfs/home/nadir/custom_R_packages/my_package.tar.gz", repos = NULL)'
-```
+  R -e 'install.packages(c("rvest", "evaluate"), repos = "https://cloud.r-project.org")'
+
+  # Install the local package code for your package
+  R -e 'install.packages("/dbfs/home/nadir/custom_R_packages/my_package.tar.gz", repos = NULL)'
+  ```
 
 ## Monitoring Init Scripts
 
