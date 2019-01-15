@@ -56,7 +56,7 @@ If you need to debug your init script, Databricks will create [init script logs]
 
 ![screenshot]({{ site.baseurl }}/images/databricks-cluster-logging.png "Screenshot of clustering logging configuration")
 
-You can use the dbfs CLI to copy the logs to your local machine to read them. The automated logging naming convention is a bit cumbersome, and there is no auto complete using the CLI, but I found this an easy way to copy down the logs.
+You can use the dbfs CLI to copy the logs to your local machine to read them. The automated logging naming convention is a bit cumbersome, and there is no auto-complete using the CLI, but I found this to be an easy way to copy down the logs.
 
 Alternatively, you could change your logging destination to AWS S3 and access them in S3.
 
