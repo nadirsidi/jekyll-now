@@ -6,7 +6,7 @@
 name: Nadir Sidi
 
 # Short bio or description (displayed in the header)
-description: Data Developer, Rochester, NY
+description: Data Engineer, Rochester, NY
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://lh3.googleusercontent.com/-qkiWaJmvN9k/AAAAAAAAAAI/AAAAAAAABcM/YEE5i17Anps/photo.jpg?sz=328
@@ -21,7 +21,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: 
+  github:
   instagram:
   linkedin:
   pinterest:
@@ -73,7 +73,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 

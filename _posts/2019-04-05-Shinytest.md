@@ -2,6 +2,7 @@
 layout: post
 title: Using shinytest with htmlwidgets DataTables
 tags: R shiny
+excerpt_separator: <!--more-->
 ---
 
 ## What is **shinytest** and Why Should You Care?
@@ -11,6 +12,8 @@ At work, I am part of a team that develops and maintains in-house R packages and
 As our tools have become more business critical, we need to demonstrate that we're building "production" software. This has always been a chip on the shoulder of every R developer, and is made worse by historic projects at my company, however the R community, strongly led by RStudio, is continuously pushing back on this image with tools designed for robustness. Production software is a series of best-practices and processes, and is not a specific feature of a language.
 
 The [**shinytest**](https://github.com/rstudio/shinytest) package is a project in active development led by the excellent team at RStudio, with the heaviest contribution from [Winston Chang](https://github.com/wch) and [Gábor Csárdi](https://github.com/gaborcsardi). It provides a means for automating functional tests for a shiny app and running them with a headless browser (specifically PhantomJS). By adopting automated testing, a developer can feel more confident they are releasing a high-quality, defect-free application.
+
+<!--more-->
 
 ## Initial Thoughts and Motivation for an Example
 

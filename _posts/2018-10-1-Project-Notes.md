@@ -2,6 +2,7 @@
 layout: post
 title: Independent Project - PredictedIt - Project Notes
 tags: predictedit notes
+excerpt_separator: <!--more-->
 ---
 
 ## Project Overview
@@ -15,6 +16,8 @@ into the rats nest that is the stock market. Unfortunately, the PredictIt API is
 minimal, so for this project I am setting out to archive data from PredictIt using the cheapest, abstracted-AWS services I can find; structure the data and make it accessible to others in a cheap,
 but scalable, microservices architecture; Analyze the data myself and potentially practice
 applying some quant-trading algorithms along the way.
+
+<!--more-->
 
 ## Project Goals
 * Learn how to build and release an AWS-based architecture

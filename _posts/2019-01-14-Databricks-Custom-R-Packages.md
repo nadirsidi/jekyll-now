@@ -2,6 +2,7 @@
 layout: post
 title: Custom R Packages on Databricks
 tags: databricks R
+excerpt_separator: <!--more-->
 ---
 ## Problem Overview
 
@@ -10,6 +11,8 @@ The [Databricks](https://databricks.com/) platform provides a great solution for
 In my case, I need to use an ecosystem of custom, in-house R packages, hosted on our internal GitHub Enterprise server, to interact with various internal services. Databricks allows users to manage packages using [Libraries](https://docs.databricks.com/user-guide/libraries.html), but currently only R packages that are hosted on a CRAN server can be installed.
 
 In this post I will go through my process for POSTing a custom R package to the [Databricks File System (dbfs)](https://docs.databricks.com/user-guide/dbfs-databricks-file-system.html) and installing it on each node of a cluster using a [Cluster Node Initialization Script (init script)](https://docs.databricks.com/user-guide/clusters/init-scripts.html).
+
+<!--more-->
 
 ## Why Not Just Install Using `R install.packages()`?
 
