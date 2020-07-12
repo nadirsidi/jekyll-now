@@ -32,13 +32,13 @@ This process will also work if you already have the tar.gz file for the package.
 
 1. If you do not already have a [bundled package](http://r-pkgs.had.co.nz/package.html), use the R function `devtools::build()` to build a local bundled package tar.gz file.
 2. Use the dbfs CLI to cp the tar.gz file to your desired path in the dbfs. For example, I copied my tar.gz using the command:
-```
+```shell
 dbfs cp ./my_package.tar.gz dbfs:/home/nadir/custom_R_packages/
 ```
 3. We'll need to ensure we first install all the package dependencies from a CRAN mirror. You can compare your custom package dependencies listed in the [DESCRIPTION](http://r-pkgs.had.co.nz/description.html) file to the already-installed R packages in each Databricks runtime environment. Here is the list of [R packages in the Databricks 4.3 runtime enviroment](https://docs.databricks.com/release-notes/runtime/4.3.html#installed-r-libraries).
 4. Write a bash script to invoke R, install all necessary dependencies from CRAN, and install your local package from the dbfs. Here is my `install_my_package.sh` init script. Note, you'll need to specify a CRAN repo as there doesn't seem to be a default. Also, note the different syntax for referring to the dbfs with the CLI versus in the script:
 
-  ```
+  ```shell
   #!/bin/bash
 
   # Install necessary dependencies from CRAN for your custom package
