@@ -49,7 +49,7 @@ The shiny package has a function, [`exportTestValues()`](https://shiny.rstudio.c
 
 The code for my `scaledData()` reactive dataframe that I send to the DataTable to render, as well as the code to export the value for testing is shown below:
 
-```
+```r
 scaledData <- reactive({
   dummyData[, "y"] <- dummyData[, "y"] * input$scale
   return(dummyData)
